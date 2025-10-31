@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Исследование Космоса - Главная&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>Это блок &lt;style&gt; (стили). Он отвечает за весь внешний вид: цвета, шрифты, отступы.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Это как "дизайнер" твоего сайта.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #001f3f; /* Темно-синий */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Стили для навигации (Пункты 1-5) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.5rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункт 1: Графическая гиперссылка (логотип) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a.logo-link {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a.logo-link span {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* Это простой способ сделать "графический" логотип</p>
+<p class="p1"><span class="Apple-converted-space">              </span>с помощью символа Emoji. Он тоже считается графикой.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>*/</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(3px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункт 5: Выделение текущего положения */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0074D9; /* Яркий синий */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>main {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 5px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Этот класс 'hidden' - ключевой.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>Он прячет все "страницы", кроме одной.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>*/</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none; /* Прячем по умолчанию */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block; /* Показываем активную страницу */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Далее идут стили для контента внутри страниц (Пункты 6-17)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>*/</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункт 6: Навигация внутри страницы */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page-nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #eee;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page-nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункты 7, 8: Списки и Изображения */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>figure {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>figure img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>figcaption {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункт 9: Миниатюра и большое изображение */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.thumbnail {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100px; /* Размер по горизонтали до 100 пикселей */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.thumbnail:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #0074D9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункт 10: Таблица */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.styled-table {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* Изображение на заднем фоне всей таблицы */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-image: url('https://placehold.co/800x300/001f3f/333333?text=Fon+Tablitsy&amp;font=arial');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white; /* Делаем текст белым, чтобы был виден на фоне */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden; /* Для скругления углов */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.styled-table th, .styled-table td {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* Добавляем полупрозрачный фон для читаемости */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(0, 0, 0, 0.5);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.styled-table th {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(0, 0, 0, 0.7);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.styled-table img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Пункты 11, 12: Формы */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form div {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input[type="text"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input[type="tel"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input[type="email"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input[type="number"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input[type="date"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form input[type="password"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form select,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form textarea {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: calc(100% - 20px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0074D9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>form button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #00569a;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Стили для страниц DOM/JS */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.passport-page {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fdfbef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Courier New', Courier, monospace;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.passport-page h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px dashed #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.passport-page p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.passport-page span {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #eee;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2px 4px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>Шапка (Header)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Единая для всех страниц</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Сайт "Исследование Космоса"&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>НАВИГАЦИЯ (Пункты 1-5)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Единая для всех страниц</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Пункт 1 и 4: Текстовая и Графическая гиперссылка на начальную страницу --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#home" class="nav-link logo-link"&gt;&lt;span&gt;🚀&lt;/span&gt;На Главную&lt;/a&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Пункт 1: Текстовые гиперссылки --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#planets" class="nav-link"&gt;Планеты (Списки)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#missions" class="nav-link"&gt;Миссии (Таблица)&lt;/a&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Пункт 2: Ссылка на закладку (внутренний фрагмент) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Эта ссылка ведет на страницу "Телескопы" и сразу на раздел "Хаббл" --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#telescopes-hubble" class="nav-link"&gt;К Телескопу "Хаббл"&lt;/a&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#forms" class="nav-link"&gt;Формы&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#dom-js" class="nav-link"&gt;DOM &amp; JS&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Пункт 3: Ссылка на внешний сайт (открывается в новом окне) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://yandex.ru" target="_blank"&gt;Яндекс (Внешний)&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>Основной контент (Main)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Здесь лежат все "страницы"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Страница" 1: Главная (home)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="home" class="page active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Добро пожаловать!&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Это учебный сайт, посвященный исследованию космоса. Здесь собраны материалы, демонстрирующие выполнение всех 17 требований к сайту на HTML, CSS и JavaScript.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Используйте навигацию выше, чтобы перемещаться по разделам.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;figure&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Пункт 8: Изображение с пояснением --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/800x400/001f3f/ffffff?text=Kosmos&amp;font=arial" alt="Вид космоса"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;figcaption&gt;Космос — это то, что мы исследуем.&lt;/figcaption&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/figure&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Страница" 2: Планеты (planets)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>(Пункты 7, 8)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="planets" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Планеты Солнечной Системы&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Пункт 7: Нумерованные, не нумерованные, вложенные списки --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Планеты Земной Группы (Нумерованный список)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Меркурий&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Венера&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Земля&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Марс&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ol&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Газовые Гиганты (Не нумерованный список)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Юпитер&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Сатурн&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Уран&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Нептун&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Вложенный список (Спутники)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Земля</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Луна&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Марс</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Фобос&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Деймос&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Юпитер</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ио&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Европа&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Ганимед&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Каллисто&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Страница" 3: Миссии (missions)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>(Пункт 10: Таблица)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="missions" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Знаменитые Космические Миссии&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Пункт 10: Таблица со всеми требованиями --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;table class="styled-table"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;caption&gt;План будущих миссий&lt;/caption&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Миссия&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Цель&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Логотип (Изображение в ячейке)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Статус (Гиперссылка)&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;Артемида&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;Возвращение на Луну&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;&lt;img src="https://placehold.co/100x100/ffffff/000000?text=Artemis&amp;font=arial" alt="Лого Артемида"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;&lt;a href="https://www.nasa.gov/specials/artemis/" target="_blank" style="color: #90cfff;"&gt;Официальный сайт&lt;/a&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;Mars Sample Return&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;Доставка грунта с Марса&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;&lt;img src="https://placehold.co/100x100/ffffff/000000?text=Mars&amp;font=arial" alt="Лого Марс"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;td&gt;&lt;a href="#" style="color: #90cfff;"&gt;Планируется&lt;/a&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Страница" 4: Телескопы (telescopes)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>(Пункт 6: Навигация внутри страницы)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>(Пункт 9: Миниатюра)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="telescopes" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Космические Телескопы&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Пункт 6: Навигация внутри страницы --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="page-nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#telescopes-main"&gt;Общее&lt;/a&gt; |</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#telescopes-hubble"&gt;Телескоп "Хаббл"&lt;/a&gt; |</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#telescopes-webb"&gt;Телескоп "Джеймс Уэбб"&lt;/a&gt; |</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#top"&gt;К началу страницы&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="telescopes-main"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Общая информация&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Космические телескопы позволяют нам заглянуть в самые дальние уголки вселенной.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Много текста для прокрутки --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Это "закладка" для Пункта 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="telescopes-hubble"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Телескоп "Хаббл"&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Работает на орбите с 1990 года. Сделал невероятные снимки.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Пункт 9: Миниатюра, открывающая большое изображение в новом окне --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Пример снимка (Пункт 9):&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://placehold.co/600x400/000000/ffffff?text=Bolshoy+Snimok+Habbla&amp;font=arial" target="_blank"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/100x67/000000/ffffff?text=Miniatura&amp;font=arial" alt="Миниатюра снимка Хаббла" class="thumbnail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="telescopes-webb"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Телескоп "Джеймс Уэбб"&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Запущен в 2021 году, работает в инфракрасном диапазоне.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... (много текста) ...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Пункт 6: Ссылка "к началу" --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#top"&gt;Наверх&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Страница" 5: Формы (forms)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>(Пункты 11, 12)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="forms" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Формы обратной связи&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">              </span>Пункт 11: Форма личных контактных данных</p>
+<p class="p1"><span class="Apple-converted-space">              </span>action="https://httpbin.org/post" - это тестовый сервер.</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Он вернет (покажет на новой странице) те данные, которые получил.</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Это доказывает, что форма "работает" и "отправляет на удаленный сервер".</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Форма 1: Контактные данные (Пункт 11)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form action="https://httpbin.org/post" method="POST" target="_blank"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="familiya"&gt;Фамилия:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="familiya" name="familiya" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="imya"&gt;Имя:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="imya" name="imya" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="gruppa"&gt;Группа:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="gruppa" name="gruppa"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="phone"&gt;Мобильный телефон:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="tel" id="phone" name="mobilniy_telefon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="email"&gt;Электронка:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="email" id="email" name="elektronka" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="send_date"&gt;Дата отправки:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="date" id="send_date" name="data_otpravki"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button type="submit"&gt;Отправить данные&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;hr style="margin: 30px 0;"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">              </span>Пункт 12: Оригинальная форма (Заказ тура на Марс)</p>
+<p class="p1"><span class="Apple-converted-space">              </span>Содержит все требуемые типы полей.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Форма 2: Заказ тура на Марс (Пункт 12)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form action="https://httpbin.org/post" method="POST" target="_blank"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: text --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="full_name"&gt;Полное имя (для скафандра):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="full_name" name="polnoe_imya"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: number --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="tickets"&gt;Количество билетов (max 4):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="number" id="tickets" name="kolichestvo_biletov" min="1" max="4" value="1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: radio (значение по умолчанию checked) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label&gt;Класс каюты:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="radio" id="class_eco" name="klass_kayuty" value="econom" checked&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="class_eco" style="display: inline;"&gt;Эконом&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="radio" id="class_lux" name="klass_kayuty" value="lux"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="class_lux" style="display: inline;"&gt;Люкс&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: checkbox --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label&gt;Дополнительные опции:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="opt_walk" name="dop_opcii" value="progulka_po_marsu"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="opt_walk" style="display: inline;"&gt;Прогулка по Марсу&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="opt_photo" name="dop_opcii" value="fotosessiya"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="opt_photo" style="display: inline;"&gt;Фотосессия с ровером&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: date --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="departure_date"&gt;Желаемая дата вылета:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="date" id="departure_date" name="data_vyleta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: password --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="secret_code"&gt;Секретный код (для скидки):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="password" id="secret_code" name="sekretniy_kod"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- type: hidden (значение по умолчанию) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Это поле не видно пользователю, но отправляется на сервер --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="hidden" name="id_tura" value="MARS-2042"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button type="submit"&gt;Забронировать тур&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>"Страница" 6: DOM &amp; JS (dom-js)</p>
+<p class="p1"><span class="Apple-converted-space">          </span>(Пункты 14, 15, 16, 17)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="dom-js" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Работа с DOM и JavaScript&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Навигация по JS-заданиям --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="page-nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#dom-js-1" class="js-nav-link" data-target="dom-js-1"&gt;П.14-15.01: Чтение из DOM&lt;/a&gt; |</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#dom-js-2" class="js-nav-link" data-target="dom-js-2"&gt;П.15.02: Изменение DOM&lt;/a&gt; |</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#dom-js-3" class="js-nav-link" data-target="dom-js-3"&gt;П.15.03, 16-17: Алгоритм&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">              </span>Под-страница: Пункт 14-15.01: Считываем информацию из DOM</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="dom-js-1" class="js-page active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;П. 14-15.01: DOM_JS. Считываем информацию из DOM&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="passport-page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Страница 2-3 (Макет)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Выдан: ОВД по г. Москва&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Дата выдачи: 01.01.2020&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Нужные нам данные --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Фамилия: &lt;span id="p_familiya"&gt;Иванов&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Имя: &lt;span id="p_imya"&gt;Иван&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Отчество: &lt;span id="p_otchestvo"&gt;Иванович&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Пол: &lt;span id="p_pol"&gt;Муж.&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Год рождения: &lt;span id="p_god_rozhdeniya"&gt;1990&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Место рождения: &lt;span id="p_mesto_rozhdeniya"&gt;г. Москва&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;Инструкция для проверки (Пункт 14):&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Откройте "Инструменты разработчика" (F12 или Ctrl+Shift+I).&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Перейдите на вкладку "Console" (Консоль).&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Скопируйте и вставьте следующий код, чтобы получить Имя.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>(Мы используем &lt;a href="https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById" target="_blank"&gt;document.getElementById&lt;/a&gt; - это более надежный способ, чем getElementsByTagName):</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ol&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;pre style="background: #eee; padding: 10px; border-radius: 5px;"&gt;&lt;code&gt;document.getElementById('p_imya').innerText&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;b&gt;Ожидаемый результат в консоли:&lt;/b&gt; "Иван"&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;b&gt;Чтобы получить Год рождения:&lt;/b&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;pre style="background: #eee; padding: 10px; border-radius: 5px;"&gt;&lt;code&gt;document.getElementById('p_god_rozhdeniya').innerText&lt;/code&gt;&lt;/pre&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;b&gt;Ожидаемый результат в консоли:&lt;/b&gt; "1990"&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4&gt;Скриншот экрана браузера (Пункт 14):&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;b&gt;(ТЕБЕ НУЖНО БУДЕТ СДЕЛАТЬ ЭТОТ СКРИНШОТ САМОСТОЯТЕЛЬНО И ЗАМЕНИТЬ КАРТИНКУ)&lt;/b&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/800x400/eeeeee/999999?text=Mesto+dlya+tvoego+skrinshota&amp;font=arial" alt="Скриншот консоли" style="width: 100%; border: 1px dashed #ccc;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">              </span>Под-страница: Пункт 15.02: Изменяем кириллицу на латиницу</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="dom-js-2" class="js-page" style="display: none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;П. 15.02: Изменяем кириллицу на латиницу по клику&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="passport-page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Страница 2-3 (Макет)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Фамилия: &lt;span id="p_familiya_2"&gt;Петров&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Имя: &lt;span id="p_imya_2"&gt;Петр&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Год рождения: &lt;span id="p_god_rozhdeniya_2"&gt;1995&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="translateButton" style="margin-top: 20px; font-size: 1rem; padding: 10px;"&gt;Нажми, чтобы изменить на латиницу!&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">              </span>Под-страница: Пункт 15.03, 16-17: Решение алгоритмической задачи</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="dom-js-3" class="js-page" style="display: none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;П. 15.03, 16-17: Решение алгоритмической задачи&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="border: 2px dashed red; padding: 15px; background: #fff5f5;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4&gt;ВНИМАНИЕ!&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Это **шаблон**. Тебе нужно узнать номер своей задачи, найти ее условие и прислать мне.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Я пока сделал простую задачу-пример: "Сложение двух чисел (A + B)".&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 style="margin-top: 20px;"&gt;Форма для решения (Пункт 16)&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;b&gt;Условие задачи (№1016):&lt;/b&gt; Дано вещественное число A. Вычислить x = 0 при a &gt; 100; x = a при a &lt; 61, в противном случае x = a**4.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Пункт 17: Форма отправляет условие, данные и результат на сервер.</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>Мы используем JS, чтобы сперва решить задачу,<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                  </span>а потом вписать результат в скрытое поле 'resultat'</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>и только потом отправить форму.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;form<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>action="https://httpbin.org/post"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>method="POST"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>target="_blank"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>id="algorithmForm"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Скрытое поле с условием задачи --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="hidden" name="uslovie_zadachi" value="Zadacha 1016: Vychislit x po chislu A"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="numA"&gt;Вещественное число A:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="numA" name="ishodnie_dannie_A" step="any" required&gt; &lt;!-- step="any" позволяет вводить дробные числа --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Сюда JS запишет результат --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="hidden" id="resultField" name="resultat_resheniya"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                      </span>Эта кнопка НЕ отправляет форму (type="button"),</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>а сперва запускает JS-решение.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button type="button" id="solveButton"&gt;1. Решить задачу (JS)&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="font-size: 1.2rem; margin: 15px 0;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Результат: &lt;span id="resultOutput" style="font-weight: bold; color: #0074D9;"&gt;?&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                      </span>Эта кнопка отправляет форму.</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>Она заблокирована, пока задача не решена.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button type="submit" id="submitAlgorithm" disabled&gt;2. Отправить на сервер (Пункт 17)&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>Подвал (Footer)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Единый для всех страниц</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="text-align: center; color: #777; margin-top: 20px;"&gt;Учебный проект | 2025&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>Блок &lt;script&gt; (JavaScript)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Это "мозг" твоего сайта. Он отвечает за всю интерактивность.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Ждем, пока вся HTML-страница загрузится</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', function() {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- ЧАСТЬ 1: ЛОГИКА НАВИГАЦИИ (ПЕРЕКЛЮЧЕНИЕ "СТРАНИЦ") ---</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const navLinks = document.querySelectorAll('nav a.nav-link');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const pages = document.querySelectorAll('main .page');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>function showPage(pageId) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// 1. Прячем все страницы</p>
+<p class="p1"><span class="Apple-converted-space">                </span>pages.forEach(function(page) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>page.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// 'display: none' теперь управляется через CSS</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// 2. Показываем нужную страницу</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const targetPage = document.getElementById(pageId);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (targetPage) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>targetPage.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Если страница не найдена, показываем главную</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>document.getElementById('home').classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// 3. Обновляем "активную" ссылку в навигации (Пункт 5)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>navLinks.forEach(function(link) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Проверяем, совпадает ли хэш ссылки с ID страницы</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// (с учетом особого случая для "Хаббла")</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const linkHash = link.getAttribute('href');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (linkHash === '#' + pageId) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>link.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else if (pageId === 'telescopes' &amp;&amp; linkHash === '#telescopes-hubble') {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// Особый случай для ссылки на якорь</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>link.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>else {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>link.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Функция, которая читает хэш (#) из URL и показывает нужную страницу</p>
+<p class="p1"><span class="Apple-converted-space">            </span>function handleHashChange() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// window.location.hash - это то, что идет после #</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// (например, #planets или #telescopes-hubble)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let hash = window.location.hash;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Убираем # в начале</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (hash.startsWith('#')) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>hash = hash.substring(1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Особый случай для ссылки на якорь (Пункт 2)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (hash.startsWith('telescopes-hubble')) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>showPage('telescopes');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Дополнительно прокручиваем до якоря</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const hubbleElement = document.getElementById('telescopes-hubble');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (hubbleElement) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>hubbleElement.scrollIntoView({ behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else if (hash) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>showPage(hash);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Если хэша нет (главная страница)</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>showPage('home');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Слушаем клики по *всем* ссылкам в основной навигации</p>
+<p class="p1"><span class="Apple-converted-space">            </span>navLinks.forEach(function(link) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>link.addEventListener('click', function(event) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// event.preventDefault(); // Не нужно, т.к. мы используем хэши</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Даем JS секунду, чтобы "догнать" изменение хэша</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>setTimeout(handleHashChange, 50);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Вызываем функцию при первой загрузке страницы</p>
+<p class="p1"><span class="Apple-converted-space">            </span>handleHashChange();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// И каждый раз, когда меняется хэш (например, по клику)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.addEventListener('hashchange', handleHashChange);</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- ЧАСТЬ 2: ЛОГИКА ДЛЯ СТРАНИЦЫ "DOM &amp; JS" ---</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- Логика для вложенной навигации на странице "DOM &amp; JS" ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const jsNavLinks = document.querySelectorAll('.js-nav-link');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const jsPages = document.querySelectorAll('.js-page');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>jsNavLinks.forEach(function(link) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>link.addEventListener('click', function(event) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>event.preventDefault(); // Запрещаем переход по якорю</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const targetId = link.getAttribute('data-target');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Прячем все под-страницы</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>jsPages.forEach(p =&gt; p.style.display = 'none');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Показываем нужную</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>document.getElementById(targetId).style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- Логика для П. 15.02 (Изменение на латиницу) ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const translateButton = document.getElementById('translateButton');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (translateButton) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>translateButton.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Находим нужные элементы по их ID</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const familiya = document.getElementById('p_familiya_2');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const imya = document.getElementById('p_imya_2');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const god = document.getElementById('p_god_rozhdeniya_2');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Меняем их текст</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>familiya.innerText = "Petrov";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>imya.innerText = "Petr";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>god.innerText = "1995 (translated)";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Меняем текст на кнопке, чтобы показать, что все готово</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>this.innerText = "Готово! (Done!)";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>this.disabled = true; // Блокируем кнопку</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- Логика для П. 16-17 (Алгоритмическая задача) ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const solveButton = document.getElementById('solveButton');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const submitAlgorithmButton = document.getElementById('submitAlgorithm');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const resultOutput = document.getElementById('resultOutput');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const resultField = document.getElementById('resultField');</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (solveButton) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>solveButton.addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// 1. Получаем исходные данные из формы</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const numA_val = document.getElementById('numA').value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// 2. Проверяем, что это число</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// (parseFloat превращает текст "123.5" в число 123.5)</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const a = parseFloat(numA_val);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (isNaN(a)) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// isNaN - это "is Not a Number" (не число)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>resultOutput.innerText = "Ошибка: введите число A!";</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>resultOutput.style.color = "red";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// 3. РЕШАЕМ ЗАДАЧУ (Вот твой JS по задаче 1016)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>let x; // 'let' значит, что мы можем менять значение этой переменной</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (a &gt; 100) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>x = 0;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>} else if (a &lt; 61) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>x = a;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>// В противном случае (значит, 'a' между 61 и 100 включительно)</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>x = Math.pow(a, 4); // a**4, или a*a*a*a</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// 4. Показываем результат пользователю</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>resultOutput.innerText = x;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>resultOutput.style.color = "#0074D9";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// 5. Записываем результат в *скрытое* поле для отправки на сервер</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>resultField.value = x;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// 6. Разблокируем кнопку отправки</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>submitAlgorithmButton.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}); // Конец 'DOMContentLoaded'</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+</body>
+</html>
