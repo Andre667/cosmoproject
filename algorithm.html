@@ -13,10 +13,6 @@
         <h1>Технический сайт (Задания 14-17)</h1>
     </header>
 
-    <!-- 
-      НАВИГАЦИЯ
-      Теперь class="active" стоит на ссылке "Алгоритм".
-    -->
     <nav>
         <a href="index.html">Главная</a>
         <a href="passport.html">Паспорт (П.14)</a>
@@ -25,39 +21,28 @@
     </nav>
 
     <main>
-        <h3>П. 15.03, 16-17: Решение алгоритмической задачи</h3>
+        <h3>П. 15.03, 16: Решение алгоритмической задачи</h3>
         
         <h4 style="margin-top: 20px;">Форма для решения (Пункт 16)</h4>
         <p><b>Условие задачи (№1016):</b> Дано вещественное число A. Вычислить x = 0 при a > 100; x = a при a < 61, в противном случае x = a**4.</p>
 
         <!-- 
-          Пункт 17: Форма отправляет условие, данные и результат на сервер.
+          ПРИНЦИПИАЛЬНОЕ ИЗМЕНЕНИЕ:
+          По твоему требованию, я убрал форму <form> и кнопку "Отправить на сервер".
+          Эта страница теперь выполняет только Пункт 16, но НЕ выполняет Пункт 17.
         -->
-        <form 
-            action="https://httpbin.org/post" 
-            method="POST" 
-            target="_blank" 
-            id="algorithmForm"
-        >
-            <!-- Скрытое поле с условием задачи -->
-            <input type="hidden" name="uslovie_zadachi" value="Zadacha 1016: Vychislit x po chislu A">
-            
+        <div id="algorithmSolver">
             <div>
                 <label for="numA">Вещественное число A:</label>
-                <input type="number" id="numA" name="ishodnie_dannie_A" step="any" required> <!-- step="any" позволяет вводить дробные числа -->
+                <input type="number" id="numA" step="any" required>
             </div>
             
-            <!-- Сюда JS запишет результат -->
-            <input type="hidden" id="resultField" name="resultat_resheniya">
-            
-            <button type="button" id="solveButton">1. Решить задачу (JS)</button>
+            <button type="button" id="solveButton" style="margin-top: 15px;">1. Решить задачу (JS)</button>
             
             <p style="font-size: 1.2rem; margin: 15px 0;">
                 Результат: <span id="resultOutput" style="font-weight: bold; color: #0074D9;">?</span>
             </p>
-
-            <button type="submit" id="submitAlgorithm" disabled>2. Отправить на сервер (Пункт 17)</button>
-        </form>
+        </div>
     </main>
 
     <footer>
@@ -66,16 +51,14 @@
 
     <!-- 
       JavaScript (мозг) для ЭТОЙ страницы.
+      Я убрал из него все, что связано с отправкой.
     -->
     <script>
-        // Ждем, пока вся HTML-страница загрузится
         document.addEventListener('DOMContentLoaded', function() {
 
-            // --- Логика для П. 16-17 (Алгоритмическая задача) ---
+            // --- Логика для П. 16 (Алгоритмическая задача) ---
             const solveButton = document.getElementById('solveButton');
-            const submitAlgorithmButton = document.getElementById('submitAlgorithm');
             const resultOutput = document.getElementById('resultOutput');
-            const resultField = document.getElementById('resultField');
             
             if (solveButton) {
                 solveButton.addEventListener('click', function() {
@@ -104,12 +87,6 @@
                         // 4. Показываем результат пользователю
                         resultOutput.innerText = x;
                         resultOutput.style.color = "#0074D9";
-
-                        // 5. Записываем результат в *скрытое* поле
-                        resultField.value = x;
-
-                        // 6. Разблокируем кнопку отправки
-                        submitAlgorithmButton.disabled = false;
                     }
                 });
             }
