@@ -1,0 +1,129 @@
+/* Это CSS (Cascading Style Sheets) — "дизайнер" твоего сайта.
+  Этот ОДИН файл будет отвечать за внешний вид ВСЕХ твоих 4-х HTML-страниц.
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #001f3f; /* Темно-синий */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* НАВИГАЦИЯ (Пункты 1-5)
+  Она будет одинаковой на всех страницах
+*/
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+/* Пункт 5: Выделение текущего положения 
+  Мы будем вручную ставить class="active" в HTML-коде
+  той страницы, на которой находимся.
+*/
+nav a.active {
+    background-color: #0074D9; /* Яркий синий */
+    font-weight: bold;
+}
+
+/* Основной контент */
+main {
+    flex: 1; /* Заставляет main "растягиваться" до футера */
+    padding: 2rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+/* Стили для конкретных страниц (Паспорт, Алгоритм) 
+*/
+
+/* Стили для страниц DOM/JS */
+.passport-page {
+    border: 2px solid #333;
+    background-color: #fdfbef;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.passport-page h3 {
+    text-align: center;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
+}
+.passport-page p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.passport-page span {
+    font-weight: bold;
+    background-color: #eee;
+    padding: 2px 4px;
+}
+
+/* Стили для форм */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+form div {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background-color: #0074D9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+form button:hover {
+    background-color: #00569a;
+}

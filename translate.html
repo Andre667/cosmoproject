@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>П.15.02: Изменение DOM</title>
+    <!-- Подключаем тот же самый style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Технический сайт (Задания 14-17)</h1>
+    </header>
+
+    <!-- 
+      НАВИГАЦИЯ
+      Теперь class="active" стоит на ссылке "Латиница".
+    -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="passport.html">Паспорт (П.14)</a>
+        <a href="translate.html" class="active">Латиница (П.15.02)</a>
+        <a href="algorithm.html">Алгоритм (П.15.03)</a>
+    </nav>
+
+    <main>
+        <h3>П. 15.02: Изменяем кириллицу на латиницу по клику</h3>
+                
+        <div class="passport-page">
+            <h3>Страница 2-3 (Макет)</h3>
+            <p>Фамилия: <span id="p_familiya_2">Петров</span></p>
+            <p>Имя: <span id="p_imya_2">Петр</span></p>
+            <p>Год рождения: <span id="p_god_rozhdeniya_2">1995</span></p>
+        </div>
+        
+        <button id="translateButton" style="margin-top: 20px; font-size: 1rem; padding: 10px;">Нажми, чтобы изменить на латиницу!</button>
+    </main>
+
+    <footer>
+        <p>Учебный проект | 2025</p>
+    </footer>
+
+    <!-- 
+      JavaScript (мозг) для ЭТОЙ страницы.
+      Он встроен прямо сюда, чтобы не создавать лишний .js файл.
+    -->
+    <script>
+        // Ждем, пока вся HTML-страница загрузится
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- Логика для П. 15.02 (Изменение на латиницу) ---
+            const translateButton = document.getElementById('translateButton');
+            if (translateButton) {
+                translateButton.addEventListener('click', function() {
+                    // Находим нужные элементы по их ID
+                    const familiya = document.getElementById('p_familiya_2');
+                    const imya = document.getElementById('p_imya_2');
+                    const god = document.getElementById('p_god_rozhdeniya_2');
+
+                    // Меняем их текст
+                    familiya.innerText = "Petrov";
+                    imya.innerText = "Petr";
+                    god.innerText = "1995 (translated)";
+
+                    // Меняем текст на кнопке, чтобы показать, что все готово
+                    this.innerText = "Готово! (Done!)";
+                    this.disabled = true; // Блокируем кнопку
+                });
+            }
+
+        }); // Конец 'DOMContentLoaded'
+    </script>
+
+</body>
+</html>

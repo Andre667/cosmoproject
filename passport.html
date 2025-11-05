@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>П.14-15.01: Чтение из DOM</title>
+    <!-- Подключаем тот же самый style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Технический сайт (Задания 14-17)</h1>
+    </header>
+
+    <!-- 
+      НАВИГАЦИЯ
+      Теперь class="active" стоит на ссылке "Паспорт".
+    -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="passport.html" class="active">Паспорт (П.14)</a>
+        <a href="translate.html">Латиница (П.15.02)</a>
+        <a href="algorithm.html">Алгоритм (П.15.03)</a>
+    </nav>
+
+    <main>
+        <h3>П. 14-15.01: DOM_JS. Считываем информацию из DOM</h3>
+                
+        <div class="passport-page">
+            <h3>Страница 2-3 (Макет)</h3>
+            <p>Выдан: ОВД по г. Москва</p>
+            <p>Дата выдачи: 01.01.2020</p>
+            <!-- Нужные нам данные -->
+            <p>Фамилия: <span id="p_familiya">Иванов</span></p>
+            <p>Имя: <span id="p_imya">Иван</span></p>
+            <p>Отчество: <span id="p_otchestvo">Иванович</span></p>
+            <p>Пол: <span id="p_pol">Муж.</span></p>
+            <p>Год рождения: <span id="p_god_rozhdeniya">1990</span></p>
+            <p>Место рождения: <span id="p_mesto_rozhdeniya">г. Москва</span></p>
+        </div>
+
+        <h4>Инструкция для проверки (Пункт 14):</h4>
+        <ol>
+            <li>Откройте "Инструменты разработчика" (F12 или Ctrl+Shift+I).</li>
+            <li>Перейдите на вкладку "Console" (Консоль).</li>
+            <li>
+                Скопируйте и вставьте следующий код, чтобы получить Имя:
+            </li>
+        </ol>
+        <pre style="background: #eee; padding: 10px; border-radius: 5px;"><code>document.getElementById('p_imya').innerText</code></pre>
+        
+        <p><b>Ожидаемый результат в консоли:</b> "Иван"</p>
+
+        <p><b>Чтобы получить Год рождения:</b></p>
+        <pre style="background: #eee; padding: 10px; border-radius: 5px;"><code>document.getElementById('p_god_rozhdeniya').innerText</code></pre>
+        <p><b>Ожидаемый результат в консоли:</b> "1990"</p>
+
+        <h4>Скриншот экрана браузера (Пункт 14):</h4>
+        <p><b>(ТЕБЕ НУЖНО БУДЕТ СДЕЛАТЬ ЭТОТ СКРИНШОТ САМОСТОЯТЕЛЬНО И ЗАМЕНИТЬ КАРТИНКУ)</b></p>
+        <!-- 
+          ПРИМЕЧАНИЕ: Чтобы эта картинка заработала, тебе нужно будет:
+          1. Сделать скриншот, назвать его "screenshot.png".
+          2. Загрузить его на GitHub ВМЕСТЕ с этими HTML-файлами.
+          3. Изменить src="..." на src="screenshot.png"
+          
+          Пока что оставим ссылку-заглушку, это проще.
+        -->
+        <img src="https://placehold.co/800x400/eeeeee/999999?text=Mesto+dlya+tvoego+skrinshota&font=arial" alt="Скриншот консоли" style="width: 100%; border: 1px dashed #ccc;">
+    </main>
+
+    <footer>
+        <p>Учебный проект | 2025</p>
+    </footer>
+
+</body>
+</html>
